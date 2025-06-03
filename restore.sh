@@ -68,7 +68,7 @@ sudo pacman -Rsn $(pacman -Qdtq)
 sudo chmod +x /etc/xdg/waybar/cpu_vbar.py
 sudo chmod +x /etc/xdg/waybar/mem_vbar.py
 sudo chmod +x /etc/xdg/waybar/mic.py
-sudo chmod +x /etc/xdg/waybar/networking.py
+sudo chmod +x /etc/xdg/waybar/network.py
 sudo chmod +x /etc/xdg/waybar/volume.py
 
 sudo reboot
