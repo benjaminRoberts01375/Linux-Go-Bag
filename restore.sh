@@ -36,6 +36,14 @@ makepkg -si
 cd ..
 rm -rf 1password
 
+# Install Warp
+sudo sh -c "echo -e '\n[warpdotdev]\nServer = https://releases.warp.dev/linux/pacman/\$repo/\$arch' >> /etc/pacman.conf"
+sudo pacman-key -r "linux-maintainers@warp.dev"
+sudo pacman-key --lsign-key "linux-maintainers@warp.dev"
+sudo pacman -Sy warp-terminal
+curl -L -o warp.pkg.tar.zst https://app.warp.dev/download?package=pacman
+sudo pacman -U ./warp.pkg.tar.zst
+
 # Make font directory
 mkdir -p ~/.local/share/fonts
 
