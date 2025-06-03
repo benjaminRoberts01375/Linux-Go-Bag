@@ -71,4 +71,7 @@ sudo chmod +x /etc/xdg/waybar/mic.py
 sudo chmod +x /etc/xdg/waybar/network.py
 sudo chmod +x /etc/xdg/waybar/volume.py
 
-sudo reboot
+echo "Restore complete!"
+echo "Restarting in 3 seconds..."
+sleep 3
+sudo systemctl restart gdm
