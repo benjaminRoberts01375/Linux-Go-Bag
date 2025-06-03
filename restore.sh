@@ -21,7 +21,7 @@ rm -rf yay
 yay -Syu --noconfirm
 
 # Install Yay packages
-yay -S --needed --noconfirm visual-studio-code-bin
+yay -S --needed --noconfirm visual-studio-code-bin waypaper
 
 # Install Flatpak
 flatpak install -y flathub com.github.tchx84.Flatseal
