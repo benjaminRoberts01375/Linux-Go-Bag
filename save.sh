@@ -18,5 +18,5 @@ cp -r ~/.config/warp-terminal warp-terminal
 # Copy data
 cp ~/Documents/wallpaper.jpg wallpaper.jpg
 cp ~/.bash_history .bash_history
-cp -r /home/ben/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/instances instances
+cp -r ~/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/instances instances
 cp -r ~/.local/share/fonts fonts
