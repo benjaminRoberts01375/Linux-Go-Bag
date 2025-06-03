@@ -39,6 +39,9 @@ rm -rf 1password
 # Make font directory
 mkdir -p ~/.local/share/fonts
 
+# Setup PrismLauncher
+(flatpak run org.prismlauncher.PrismLauncher & sleep 2 && flatpak kill org.prismlauncher.PrismLauncher) </dev/null &>/dev/null & # Ensures the app has files setup
+
 # Move files
 cp -r hypr ~/.config/hypr
 cp -r warp-terminal ~/.config/warp-terminal
