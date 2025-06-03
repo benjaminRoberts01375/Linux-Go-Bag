@@ -48,15 +48,14 @@ sudo pacman -U ./warp.pkg.tar.zst
 mkdir -p ~/.local/share/fonts
 
 # Setup PrismLauncher
-(flatpak run org.prismlauncher.PrismLauncher & sleep 2 && flatpak kill org.prismlauncher.PrismLauncher) </dev/null &>/dev/null & # Ensures the app has files setup
+(flatpak run org.prismlauncher.PrismLauncher & sleep 2 && flatpak kill org.prismlauncher.PrismLauncher && cp -r instances ~/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/instances) </dev/null &>/dev/null & # Ensures the app has files setup
 
 # Move files
 cp -r hypr ~/.config/hypr
 cp -r warp-terminal ~/.config/warp-terminal
 cp -r blender ~/.blender
 cp -r .supermaven ~/.supermaven
-cp -r org.prismlauncher.PrismLauncher ~/.var/app/org.prismlauncher.PrismLauncher
-cp -r fonts ~/.local/share/fonts 
+cp -r fonts ~/.local/share/fonts
 cp wallpaper ~/Documents/wallpaper.jpg
 cp .bash_history ~/.bash_history
 sudo cp -r waybar /etc/xdg/waybar
