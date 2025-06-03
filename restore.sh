@@ -63,6 +63,7 @@ sudo cp -r waybar /etc/xdg/waybar
 
 # Remove default apps
 sudo pacman -Rnsu dolphin 2>/dev/null || true
+sudo pacman -Rnsu kitty 2>/dev/null || true
 
 # Default settings
 sudo systemctl disable sddm
