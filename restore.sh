@@ -48,7 +48,7 @@ sudo pacman -U ./warp.pkg.tar.zst
 mkdir -p ~/.local/share/fonts
 
 # Setup PrismLauncher
-(flatpak run org.prismlauncher.PrismLauncher & sleep 2 && flatpak kill org.prismlauncher.PrismLauncher && cp -r instances ~/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/instances) </dev/null &>/dev/null & # Ensures the app has files setup
+(flatpak run org.prismlauncher.PrismLauncher & sleep 2 && flatpak kill org.prismlauncher.PrismLauncher && cp -r instances ~/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/) </dev/null &>/dev/null & # Ensures the app has files setup
 
 # Move files
 cp -r hypr ~/.config/hypr
