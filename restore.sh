@@ -52,13 +52,15 @@ yay -S ttf-firacode-nerd
 (flatpak run org.prismlauncher.PrismLauncher & sleep 2 && flatpak kill org.prismlauncher.PrismLauncher && cp -r instances ~/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/) </dev/null &>/dev/null & # Ensures the app has files setup
 
 # Move files
-cp -r warp-terminal ~/.config/warp-terminal
-cp -r blender ~/.blender
-cp -r .supermaven ~/.supermaven
-cp -r fonts ~/.local/share/fonts
+mkdir ~/Documents
+cp -r warp-terminal ~/.config/
+cp -r blender ~/.config/
+cp -r rofi ~/.config/
+cp -r .supermaven ~/
+cp -r fonts ~/.local/share/
 cp wallpaper ~/Documents/wallpaper.jpg
 cp .bash_history ~/.bash_history
-sudo cp -r waybar /etc/xdg/waybar
+sudo cp -r waybar /etc/xdg/
 cp -r hypr ~/.config/
 
 # Remove default apps
