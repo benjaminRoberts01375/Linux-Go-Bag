@@ -81,6 +81,6 @@ sudo chmod +x /etc/xdg/waybar/network.py
 sudo chmod +x /etc/xdg/waybar/volume.py
 
 echo "Restore complete!"
-echo "Logging out in 3 seconds..."
+echo "Restarting out in 3 seconds..."
 sleep 3
-sudo systemctl restart gdm
+sudo reboot
