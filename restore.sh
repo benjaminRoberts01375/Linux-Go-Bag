@@ -46,6 +46,7 @@ sudo pacman -U ./warp.pkg.tar.zst
 
 # Make font directory
 mkdir -p ~/.local/share/fonts
+yay -S ttf-firacode-nerd
 
 # Setup PrismLauncher
 (flatpak run org.prismlauncher.PrismLauncher & sleep 2 && flatpak kill org.prismlauncher.PrismLauncher && cp -r instances ~/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/) </dev/null &>/dev/null & # Ensures the app has files setup
