@@ -4,6 +4,9 @@
 cd "$(dirname "$(readlink -f "$0")")"
 cd save
 
+# Setup Pacman
+sudo cp pacman.conf /etc/pacman.conf
+
 # Initial updates
 sudo pacman -Syu --noconfirm
 

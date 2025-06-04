@@ -14,6 +14,7 @@ cp -r ~/.config/rofi rofi
 cp -r ~/.config/blender blender
 cp -r ~/.supermaven .supermaven
 cp -r ~/.config/warp-terminal warp-terminal
+cp /etc/pacman.conf pacman.conf
 
 # Copy data
 cp ~/Documents/wallpaper.jpg wallpaper.jpg
