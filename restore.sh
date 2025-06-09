@@ -47,6 +47,11 @@ sudo pacman -Sy warp-terminal
 curl -L -o warp.pkg.tar.zst https://app.warp.dev/download?package=pacman
 sudo pacman -U ./warp.pkg.tar.zst
 
+# Install Docker
+wget https://download.docker.com/linux/static/stable/x86_64/docker-28.2.1.tgz -qO- | tar xvfz - docker/docker --strip-components=1
+sudo mv ./docker /usr/local/bin
+sudo pacman -U ./docker-desktop-x86_64.pkg.tar.zst
+
 # Make font directory
 mkdir -p ~/.local/share/fonts
 yay -S ttf-firacode-nerd
