@@ -52,6 +52,12 @@ wget https://download.docker.com/linux/static/stable/x86_64/docker-28.2.1.tgz -q
 sudo mv ./docker /usr/local/bin
 sudo pacman -U ./docker-desktop-x86_64.pkg.tar.zst
 
+# Install Golang's Air
+go install github.com/air-verse/air@latest
+
+# Install Bun
+curl -fsSL https://bun.sh/install | bash
+
 # Make font directory
 mkdir -p ~/.local/share/fonts
 yay -S ttf-firacode-nerd
