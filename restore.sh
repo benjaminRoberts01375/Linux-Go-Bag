@@ -11,7 +11,7 @@ sudo cp pacman.conf /etc/pacman.conf
 sudo pacman -Syu --noconfirm
 
 # Install initial packages
-sudo pacman -S --noconfirm --needed waybar rofi-wayland firefox ripgrep-all git base-devel flatpak nautilus blender curl hyprpolkitagent cifs-utils smbclient gvfs gvfs-smb font-manager gdm discord python-psutil hyprpaper steam go
+sudo pacman -S --noconfirm --needed waybar rofi-wayland firefox ripgrep-all git base-devel flatpak nautilus blender curl hyprpolkitagent cifs-utils smbclient gvfs gvfs-smb font-manager gdm discord python-psutil hyprpaper steam go fastfetch espanso
 
 # Install Yay
 git clone https://aur.archlinux.org/yay.git
@@ -72,6 +72,9 @@ cp -r blender ~/.config/
 cp -r rofi ~/.config/
 cp -r .supermaven ~/
 cp -r fonts ~/.local/share/
+cp -r fastfetch ~/.config/
+cp -r pipewire ~/.config/
+cp -r espanso ~/.config/
 cp wallpaper-left.jpg ~/Documents/wallpaper-left.jpg
 cp wallpaper-right.jpg ~/Documents/wallpaper-right.jpg
 cp .bash_history ~/.bash_history

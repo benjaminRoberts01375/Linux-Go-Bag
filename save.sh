@@ -14,6 +14,9 @@ cp -r ~/.config/rofi rofi
 cp -r ~/.config/blender blender
 cp -r ~/.supermaven .supermaven
 cp -r ~/.config/warp-terminal warp-terminal
+cp -r ~/.config/fastfetch fastfetch
+cp -r ~/.config/pipewire pipewire
+cp -r ~/.config/espanso espanso
 cp /etc/pacman.conf pacman.conf
 
 # Copy data
