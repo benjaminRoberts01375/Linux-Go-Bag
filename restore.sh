@@ -72,7 +72,8 @@ cp -r blender ~/.config/
 cp -r rofi ~/.config/
 cp -r .supermaven ~/
 cp -r fonts ~/.local/share/
-cp wallpaper.jpg ~/Documents/wallpaper.jpg
+cp wallpaper-left.jpg ~/Documents/wallpaper-left.jpg
+cp wallpaper-right.jpg ~/Documents/wallpaper-right.jpg
 cp .bash_history ~/.bash_history
 sudo cp -r waybar /etc/xdg/
 cp -r hypr ~/.config/
