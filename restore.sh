@@ -100,6 +100,9 @@ sudo chmod +x /etc/xdg/waybar/mic.py
 sudo chmod +x /etc/xdg/waybar/network.py
 sudo chmod +x /etc/xdg/waybar/volume.py
 
+# Set EQ
+pactl set-default-sink effect_input.eq10
+
 echo "Restore complete!"
 echo "Restarting out in 3 seconds..."
 sleep 3
