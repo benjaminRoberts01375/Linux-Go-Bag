@@ -24,7 +24,7 @@ rm -rf yay
 yay -Syu --noconfirm
 
 # Install Yay packages
-yay -S --needed --noconfirm visual-studio-code-bin espanso-wayland
+yay -S --needed --noconfirm visual-studio-code-bin espanso-wayland actions-for-nautilus-git
 
 # Install Flatpak
 flatpak install -y flathub com.github.tchx84.Flatseal
@@ -74,6 +74,7 @@ cp -r fonts ~/.local/share/
 cp -r fastfetch ~/.config/
 cp -r pipewire ~/.config/
 cp -r espanso ~/.config/
+cp -r actions-for-nautilus ~/.local/share/actions-for-nautilus
 cp wallpaper-left.jpg ~/Documents/wallpaper-left.jpg
 cp wallpaper-right.jpg ~/Documents/wallpaper-right.jpg
 cp .bash_history ~/.bash_history

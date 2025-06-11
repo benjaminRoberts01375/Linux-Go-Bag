@@ -25,3 +25,4 @@ cp ~/Documents/wallpaper-right.jpg wallpaper-right.jpg
 cp ~/.bash_history .bash_history
 cp -r ~/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/instances instances
 cp -r ~/.local/share/fonts fonts
+cp -r ~/.local/share/actions-for-nautilus actions-for-nautilus
