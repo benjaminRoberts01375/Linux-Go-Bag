@@ -93,6 +93,7 @@ gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
 # Remove unneeded packages
 sudo pacman -Rsn $(pacman -Qdtq)
 rm -rf ~/.local/share/dolphin || true
+rm -rf ~/.config/kitty || true
 
 # Setup permissions
 sudo chmod +x /etc/xdg/waybar/cpu_vbar.py
