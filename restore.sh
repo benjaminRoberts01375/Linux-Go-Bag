@@ -81,6 +81,9 @@ cp .bash_history ~/.bash_history
 sudo cp -r waybar /etc/xdg/
 cp -r hypr ~/.config/
 
+# Extra fonts
+sudo pacman -S noto-fonts-cjk
+
 # Remove default apps
 sudo pacman -Rnsu dolphin 2>/dev/null || true
 sudo pacman -Rnsu kitty 2>/dev/null || true
