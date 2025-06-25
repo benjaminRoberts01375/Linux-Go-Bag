@@ -40,12 +40,12 @@ cd ..
 rm -rf 1password
 
 # Install Warp
-sudo sh -c "echo -e '\n[warpdotdev]\nServer = https://releases.warp.dev/linux/pacman/\$repo/\$arch' >> /etc/pacman.conf"
-sudo pacman-key -r "linux-maintainers@warp.dev"
-sudo pacman-key --lsign-key "linux-maintainers@warp.dev"
+# sudo sh -c "echo -e '\n[warpdotdev]\nServer = https://releases.warp.dev/linux/pacman/\$repo/\$arch' >> /etc/pacman.conf"
+# sudo pacman-key -r "linux-maintainers@warp.dev"
+# sudo pacman-key --lsign-key "linux-maintainers@warp.dev"
 sudo pacman -Sy warp-terminal
-curl -L -o warp.pkg.tar.zst https://app.warp.dev/download?package=pacman
-sudo pacman -U ./warp.pkg.tar.zst
+# curl -L -o warp.pkg.tar.zst https://app.warp.dev/download?package=pacman
+# sudo pacman -U ./warp.pkg.tar.zst
 
 # Install Docker
 wget https://download.docker.com/linux/static/stable/x86_64/docker-28.2.1.tgz -qO- | tar xvfz - docker/docker --strip-components=1
