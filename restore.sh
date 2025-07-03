@@ -27,9 +27,10 @@ yay -Syu --noconfirm
 yay -S --needed --noconfirm visual-studio-code-bin espanso-wayland actions-for-nautilus-git
 
 # Install Flatpak
-flatpak install -y flathub com.github.tchx84.Flatseal
-flatpak install -y flathub org.prismlauncher.PrismLauncher
-flatpak install -y flathub io.github.shiftey.Desktop
+flatpak install -y flathub com.github.tchx84.Flatseal # Flatseal
+flatpak install -y flathub org.prismlauncher.PrismLauncher # PrismLauncher
+flatpak install -y flathub io.github.shiftey.Desktop # GitHub Desktop
+flatpak install flathub io.github.flattool.Warehouse # Flatpak management
 
 # Install 1Password
 curl -sS https://downloads.1password.com/linux/keys/1password.asc | gpg --import
