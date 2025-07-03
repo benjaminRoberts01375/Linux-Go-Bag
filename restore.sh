@@ -31,6 +31,7 @@ flatpak install -y flathub com.github.tchx84.Flatseal # Flatseal
 flatpak install -y flathub org.prismlauncher.PrismLauncher # PrismLauncher
 flatpak install -y flathub io.github.shiftey.Desktop # GitHub Desktop
 flatpak install flathub io.github.flattool.Warehouse # Flatpak management
+flatpak install flathub me.iepure.devtoolbox # Dev Toolbox
 
 # Install 1Password
 curl -sS https://downloads.1password.com/linux/keys/1password.asc | gpg --import
