@@ -11,7 +11,7 @@ sudo cp pacman.conf /etc/pacman.conf
 sudo pacman -Syu --noconfirm
 
 # Install initial packages
-sudo pacman -S --noconfirm --needed waybar rofi-wayland firefox ripgrep-all git base-devel flatpak nautilus blender curl hyprpolkitagent cifs-utils smbclient gvfs gvfs-smb font-manager gdm discord python-psutil hyprpaper steam go fastfetch libreoffice-still hunspell hunspell-en_US mission-center switcheroo
+sudo pacman -S --noconfirm --needed waybar rofi-wayland firefox ripgrep-all git base-devel flatpak nautilus blender curl hyprpolkitagent cifs-utils smbclient gvfs gvfs-smb font-manager gdm discord python-psutil hyprpaper steam go fastfetch libreoffice-still hunspell hunspell-en_US mission-center switcheroo --noconfirm
 
 # Install Yay
 git clone https://aur.archlinux.org/yay.git
@@ -24,7 +24,7 @@ rm -rf yay
 yay -Syu --noconfirm
 
 # Install Yay packages
-yay -S --needed --noconfirm visual-studio-code-bin espanso-wayland actions-for-nautilus-git
+yay -S --needed --noconfirm visual-studio-code-bin espanso-wayland actions-for-nautilus-git --noconfirm
 
 # Install Flatpak
 flatpak install -y flathub com.github.tchx84.Flatseal # Flatseal
