@@ -32,6 +32,8 @@ flatpak install -y flathub org.prismlauncher.PrismLauncher # PrismLauncher
 flatpak install -y flathub io.github.shiftey.Desktop # GitHub Desktop
 flatpak install flathub io.github.flattool.Warehouse # Flatpak management
 flatpak install flathub me.iepure.devtoolbox # Dev Toolbox
+flatpak install flathub org.localsend.localsend_app # Local Send
+flatpak install flathub org.videolan.VLC # VLC
 
 # Install 1Password
 curl -sS https://downloads.1password.com/linux/keys/1password.asc | gpg --import
@@ -42,12 +44,7 @@ cd ..
 rm -rf 1password
 
 # Install Warp
-# sudo sh -c "echo -e '\n[warpdotdev]\nServer = https://releases.warp.dev/linux/pacman/\$repo/\$arch' >> /etc/pacman.conf"
-# sudo pacman-key -r "linux-maintainers@warp.dev"
-# sudo pacman-key --lsign-key "linux-maintainers@warp.dev"
 sudo pacman -Sy warp-terminal
-# curl -L -o warp.pkg.tar.zst https://app.warp.dev/download?package=pacman
-# sudo pacman -U ./warp.pkg.tar.zst
 
 # Install Docker
 wget https://download.docker.com/linux/static/stable/x86_64/docker-28.2.1.tgz -qO- | tar xvfz - docker/docker --strip-components=1
