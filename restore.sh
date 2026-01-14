@@ -30,10 +30,12 @@ yay -S --needed --noconfirm visual-studio-code-bin espanso-wayland actions-for-n
 flatpak install -y flathub com.github.tchx84.Flatseal # Flatseal
 flatpak install -y flathub org.prismlauncher.PrismLauncher # PrismLauncher
 flatpak install -y flathub io.github.shiftey.Desktop # GitHub Desktop
-flatpak install flathub io.github.flattool.Warehouse # Flatpak management
-flatpak install flathub me.iepure.devtoolbox # Dev Toolbox
-flatpak install flathub org.localsend.localsend_app # Local Send
-flatpak install flathub org.videolan.VLC # VLC
+flatpak install -y flathub io.github.flattool.Warehouse # Flatpak management
+flatpak install -y flathub me.iepure.devtoolbox # Dev Toolbox
+flatpak install -y flathub org.localsend.localsend_app # Local Send
+flatpak install -y flathub org.videolan.VLC # VLC
+curl https://launcher.hytale.com/builds/release/linux/amd64/hytale-launcher-latest.flatpak --output ~/Downloads/hytale.flatpak
+flatpak install -y ~/Downloads/hytale.flatpak
 
 # Install 1Password
 curl -sS https://downloads.1password.com/linux/keys/1password.asc | gpg --import
@@ -79,6 +81,7 @@ cp wallpaper-right.jpg ~/Documents/wallpaper-right.jpg
 cp .bash_history ~/.bash_history
 sudo cp -r waybar /etc/xdg/
 cp -r hypr ~/.config/
+cp -r HytaleLauncher ~/.var/app/com.hypixel.HytaleLauncher
 
 # Extra fonts
 sudo pacman -S noto-fonts-cjk
